@@ -1,20 +1,19 @@
 import React from 'react'
 
-function Product3 () {
+function ProductCard(image, name, description) {
   return (
     <div className="max-w-sm border border-gray-800 rounded-lg shadow bg-gray-800 dark:bg-stone-800 dark:border-gray-700">
     <a href="#">
-      <img className="rounded-t-lg" src="img/3.png" alt="" />
+      <img className="rounded-t-lg" src={image} alt="" />
     </a>
     <div className="p-5">
       <a href="#">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-          Budin navideño
+            {name}
         </h5>
       </a>
       <p className="mb-3 font-normal text-gray-400">
-      Es de origen celta y se hacía a base de leche, cereales y fruta.
-      Un budín inglés o plum cake es un bizcocho hecho con frutos secos, frutas confitadas y algún tipo de licor. Algunos incluso añaden especias en el bizcocho. El budín inglés se suele servir durante la Navidad y en algunos lugares, también durante las bodas.
+            {description}
       </p>
       <a
         href="#"
@@ -39,4 +38,4 @@ function Product3 () {
   </div>
   )
 }
-export default Product3
+export default ProductCard
