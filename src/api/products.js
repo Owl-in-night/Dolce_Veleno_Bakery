@@ -7,9 +7,10 @@ import axios from 'axios'
 // * la constante data obtene la data de response, porque axios devuelve metadata que no sirve en este ejemplo
 // * se retorna data.body porque data contiene {message, body} (respuesta del Backend), solo nos interesa body de momento
 
+
 export const getProducts = async () => {
-  const response = await axios.get('https://github.com/Owl-in-nigth/APIs/blob/main/products')
-  const data = response.data
-  
-  return data.body
+  const response = await axios.get('https://raw.githubusercontent.com/Owl-in-nigth/APIs/main/products.json')
+  const data = await response.data
+  console.log(data)
+  return data.products
 }

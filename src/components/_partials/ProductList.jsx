@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import { getProducts } from '../../api/products'
 import ProductCard from './ProductCard'
 
@@ -14,8 +14,6 @@ function ProductList() {
    
     const getResponse = async () => {
       const response = await getProducts()
-
-
       setProducts(response)
     }
 
