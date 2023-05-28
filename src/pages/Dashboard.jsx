@@ -2,7 +2,7 @@ import React from 'react'
 import { useAuth } from '../context/authContext'
 import { useNavigate } from 'react-router-dom';
 
-export function Dashboard() {
+function Dashboard() {
   const { user, signout, loading } = useAuth();
 
   const handleSignout = async () =>{
@@ -23,3 +23,4 @@ export function Dashboard() {
     
   )
 }
+export default Dashboard
