@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Contacto() {
+function Contacto () {
   return (
-    <div>Contacto</div>
+    <div>Contactanos en...</div>
   )
 }
 export default Contacto
