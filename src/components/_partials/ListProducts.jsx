@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { products } from '../../database/products'
 import { useNavigate } from 'react-router-dom'
-import '../../src/App.css'
 
 const ListProducts = () => {
   const [prods, setProds] = useState([])
@@ -22,7 +21,7 @@ const ListProducts = () => {
         <h1 className='text-4xl text-black font-bold'>Lista de productos</h1>
       </div>
       <div className='grid grid-cols-4 gap-2 w-3/4'>
-        {prods.slice(0, 3).map((prod) => (
+        {prods.map((prod) => (
           <div
             className='card'
             key={prod.id}
