@@ -37,7 +37,7 @@ function Home () {
         <img className='grid-item' src='/img/img5.jfif' width={230} height={260} />
         <img className='grid-item' src='/img/img6.jfif' width={230} height={260} />
       </div>
-      <h1 className='text_1 dark:text-white'>Nosotros somos Dolce Veleno Backery un emprendimiento que promueve la producción de postres para toda ocasión y realmente estamos agradecidos por tu presencia en nuestra página, ahora es momento de comprar y adquirir nuestros postres ¡Disfrútalo!</h1>
+      <h1 className='text_1 dark:text-white'>Nosotros somos Dolce Veleno Bakery un emprendimiento que promueve la producción de postres para toda ocasión y realmente estamos agradecidos por tu presencia en nuestra página, ahora es momento de comprar y adquirir nuestros postres ¡Disfrútalo!</h1>
       {/* Spaces for margin manualy */}
       <br />
       <br />
