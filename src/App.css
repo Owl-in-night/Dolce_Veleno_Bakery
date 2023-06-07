@@ -22,3 +22,11 @@
     font-size: 30px;
     line-height: 46px;
 }
+.img_bk{
+    background-image: url("/img/backback.png");
+    background-color: #cccccc;
+}
+.img_bk2{
+    background-image: url("/img/backback2.png");
+    background-color: #cccccc;
+}
