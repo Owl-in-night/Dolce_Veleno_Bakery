@@ -2,26 +2,29 @@
 export default {
   darkMode: 'class',
   content: [
-    "./index.html",
+    './index.html',
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     screens: {
-      'phone': '340px',
+      phone: '340px',
 
-      'tablet': '640px',
+      tablet: '640px',
       // => @media (min-width: 640px) { ... }
 
-      'laptop': '1024px',
+      laptop: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '1280px',
+      desktop: '1280px'
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {},
+    extend: {}
+  },
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active']
   },
   plugins: [
     require('flowbite/plugin')
-  ],
+  ]
 }
