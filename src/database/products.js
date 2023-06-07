@@ -22,16 +22,5 @@ export const products = [
     image: 'https://res.cloudinary.com/dky5x9gav/image/upload/v1684563903/3_fw4p6b.jpg',
     name: 'Mousse de moras',
     description: 'El Mousse es un postre tradicional de la cocina francesa y su nombre traducido al español significa “espuma”.Consiste en una crema suave y espumosa y da una sensación espumosa que se siente al comerlo. Debe ser suave y blando, pero con una textura aireada, como unas burbujitas.'
-<<<<<<< HEAD
   }
-=======
-  },
-  {
-    id: 5,
-    image: 'https://res.cloudinary.com/dky5x9gav/image/upload/v1684563903/3_fw4p6b.jpg',
-    name: 'Mousse de moras',
-    description: 'El Mousse es un postre tradicional de la cocina francesa y su nombre traducido al español significa “espuma”.Consiste en una crema suave y espumosa y da una sensación espumosa que se siente al comerlo. Debe ser suave y blando, pero con una textura aireada, como unas burbujitas.'
-  }
-
->>>>>>> 3a14fb9b96d6f56e53acec7c039f313a7d118f65
 ]

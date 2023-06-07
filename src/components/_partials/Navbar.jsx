@@ -6,7 +6,7 @@ function Navbar () {
   return (
     <nav className='bg-white rounded-lg shadow m-1 my-0 dark:bg-slate-800 border-gray-200'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-        <Link className='flex items-center'>
+        <Link className='flex items-center' to='/'>
           <IconLight fill='#000' />
         </Link>
         <ul className='flex list-none m-0 p-0'>
