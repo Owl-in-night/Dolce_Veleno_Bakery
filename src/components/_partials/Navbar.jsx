@@ -1,47 +1,55 @@
 import { Link } from 'react-router-dom'
-import ThemeSwitcher from './ThemeSwitcher'
 import IconLight from '../Icons/IconLight'
+import ThemeSwitcher from './ThemeSwitcher'
+import { Header, Menu, Nav } from './styles'
+import { RiMenu3Fill } from 'react-icons/ri'
+import React from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
 
-function Navbar () {
+export default function Navbar () {
+  const [open, setOpen] = React.useState(false)
   return (
-    <nav className='bg-white rounded-lg shadow m-1 my-0 dark:bg-slate-800 border-gray-200'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-        <Link className='flex items-center' to='/'>
-          <IconLight fill='#000' />
-        </Link>
-        <ul className='flex list-none m-0 p-0'>
+    <Header className='bg-white rounded-lg shadow  dark:bg-slate-800 border-gray-200'>
+      <Nav>
+        <div>
+          <Link className='flex items-center' to='/'>
+            <IconLight fill='#000' />
+          </Link>
+        </div>
+        <Menu open={open}>
           <li>
-            <Link className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:text-white focus:outline-none hover:bg-indigo-400 active:bg-indigo-600' to='/'>Inicio</Link>
+            <Link to='/' className=' dark:text-white'>Inicio</Link>
           </li>
           <li>
-            <Link className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:text-white focus:outline-none hover:bg-indigo-400 active:bg-indigo-600' to='/catalogo'>Catálogo</Link>
+            <Link to='/catalogo' className=' dark:text-white'>Catálogo</Link>
           </li>
           <li>
-            <Link className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:text-white focus:outline-none hover:bg-indigo-400 active:bg-indigo-600' to='/contacto'>Contacto</Link>
+            <Link to='/contacto' className=' dark:text-white'>Contacto</Link>
           </li>
           <li>
-            <Link className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:text-white focus:outline-none hover:bg-indigo-400 active:bg-indigo-600' to='/sobre-nosotros'>Sobre Nosotros</Link>
+            <Link to='/sobre-nosotros' className=' dark:text-white'>Sobre Nosotros</Link>
           </li>
           <li>
-            <Link className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:text-white focus:outline-none hover:bg-indigo-400 active:bg-indigo-600' to='/signin'>Iniciar Sesión</Link>
+            <Link to='/signin' className='dark:text-white'>Iniciar Sesión</Link>
           </li>
-          <li>
-            <ThemeSwitcher />
-          </li>
-        </ul>
-      </div>
-    </nav>
-  // <div>
-  // <header>
-  //     <nav>
-  //       <ul>
-  //       <BsFillMoonStarsFill classNameNameNameNameNameNameNameNameNameName="cursor-pointer" onClick={() => setDarkMode(!darkMode)}/>
-  //         <li><Link to="/">Home</Link></li>
-  //         <li><Link to="/search-page">Search Page</Link></li>
-  //       </ul>
-  //     </nav>
-  //   </header>
-  //   </div>
+        </Menu>
+        <div className='Theme'>
+          <ThemeSwitcher />
+        </div>
+        <div className='icon-menu'>
+          {
+            open
+              ? <AiOutlineClose
+                  size={20}
+                  onClick={() => setOpen(!open)}
+                />
+              : <RiMenu3Fill
+                  onClick={() => setOpen(!open)}
+                  color='black' size={20}
+                />
+          }
+        </div>
+      </Nav>
+    </Header>
   )
 }
-export default Navbar

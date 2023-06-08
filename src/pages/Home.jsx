@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../../src/App.css'
 function Home () {
   return (
-    <div className='dark:bg-slate-800 border-gray-200'>
+    <div className='m-0 dark:bg-slate-800 border-gray-200'>
       {/* putting video */}
       <div className='video-responsive'>
         <video className='w-full' autoPlay loop muted>
