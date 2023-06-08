@@ -18,16 +18,16 @@ export default function Navbar () {
         </div>
         <Menu open={open}>
           <li>
-            <Link to='/' className=' dark:text-white'>Inicio</Link>
+            <Link to='/' className='dark:text-white'>Inicio</Link>
           </li>
           <li>
-            <Link to='/catalogo' className=' dark:text-white'>Catálogo</Link>
+            <Link to='/catalogo' className='dark:text-white'>Catálogo</Link>
           </li>
           <li>
-            <Link to='/contacto' className=' dark:text-white'>Contacto</Link>
+            <Link to='/contacto' className='dark:text-white'>Contacto</Link>
           </li>
           <li>
-            <Link to='/sobre-nosotros' className=' dark:text-white'>Sobre Nosotros</Link>
+            <Link to='/sobre-nosotros' className='dark:text-white'>Sobre Nosotros</Link>
           </li>
           <li>
             <Link to='/signin' className='dark:text-white'>Iniciar Sesión</Link>

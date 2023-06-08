@@ -39,6 +39,7 @@ export const Menu = styled.ul`
     display: flex;
     position: absolute;
     left: -280px;
+    color: black;
     background-color: white;
     display: grid;
     place-content: center;
@@ -50,14 +51,6 @@ export const Menu = styled.ul`
     ${props => props.open && css`
         left: 0px;
     `}
-    li{
-        height: 45px;
-        padding: 8px 0px;
-        .a{
-            color: black;
-            text-decoration: none;
-        }
-    }
     ${useResponsiveTo('lg')}{
         display: flex;
         position:relative;
