@@ -24,7 +24,7 @@ export const Nav = styled.nav`
     }
     ${useResponsiveTo('lg')}{
         grid-template-columns: 1fr 4fr 1fr;
-        margin: 16px 2px 2px;
+        padding: 16px;
         .Theme{
             display: block;
         }
