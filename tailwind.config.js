@@ -4,7 +4,8 @@ export default {
   content: [
     './index.html',
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}'
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     screens: {
@@ -29,6 +30,7 @@ export default {
     backgroundColor: ['responsive', 'hover', 'focus', 'active']
   },
   plugins: [
+    [require('tw-elements/dist/plugin.cjs')],
     require('flowbite/plugin')
   ]
 }

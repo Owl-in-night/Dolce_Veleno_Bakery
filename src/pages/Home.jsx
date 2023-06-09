@@ -1,6 +1,7 @@
 // import ListProducts from '../components/_partials/ListProducts'
 import { Link } from 'react-router-dom'
 import '../../src/App.css'
+import { Helmet } from 'react-helmet'
 function Home () {
   return (
     <div className='m-0 dark:bg-slate-800 border-gray-200'>
@@ -37,11 +38,23 @@ function Home () {
         <img className='grid-item' src='/img/img5.jfif' width={230} height={260} />
         <img className='grid-item' src='/img/img6.jfif' width={230} height={260} />
       </div>
-      <div className='video-responsive'>
-        <video className='w-full' autoPlay loop muted>
-          <source src='/video/video_2.mp4' type='video/mp4' />
-        </video>
+      <div
+        className='text-center lg:text-center'
+      >
+        <p
+          data-te-animation-init
+          data-te-animation-start='onHover'
+          data-te-animation-reset='true'
+          data-te-animation='[fade-in_1s_ease-in-out]'
+        >Nosotros somos Dolce Veleno Bakery un emprendimiento que promueve la producción de postres para toda ocasión y realmente estamos agradecidos por tu presencia en nuestra página ¡Disfrútalo!
+        </p>
       </div>
+      <Helmet>
+        <script
+          type='text/javascript'
+          src='../node_modules/tw-elements/dist/js/tw-elements.umd.min.js'
+        />
+      </Helmet>
       {/* Spaces for margin manualy */}
       <br />
       <br />
