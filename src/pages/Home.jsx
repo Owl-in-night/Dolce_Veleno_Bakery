@@ -43,9 +43,9 @@ function Home () {
       </div>
       <br />
       {/* Mansory and choose select ONe */}
-      <h1 className='text-center dark:text-white'>Descubre estos y más productos en nuestro catálogo</h1>
+      <h1 className='text-center text-lg dark:text-white'>Descubre la magia y el sabor de nuestros postres</h1>
       <br />
-      <div className='grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
+      <div className='bg-inherit flex flex-col justify-center items-center rounded-lg p-2 cursor-pointer hover:bg-inherit lg:grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
         {prods.slice(0, 6).map((prod) => (
           <div
             className='grid-container' key={prod.id}
