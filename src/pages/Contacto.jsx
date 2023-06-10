@@ -10,7 +10,7 @@ function Contacto () {
   return (
     <div className='video-responsive'>
       <video className='w-full' autoPlay loop muted>
-        <source src='/public/video/video contacto.mp4' type='video/mp4' />
+        <source src='/video/video contacto.mp4' type='video/mp4' />
       </video>
       <br />
       <br />
