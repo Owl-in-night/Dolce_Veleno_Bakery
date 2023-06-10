@@ -16,19 +16,22 @@ const Catalogo = () => {
   }, [])
 
   return (
-    <div className='w-full h-screen bg-gray-200 flex flex-col justify-center items-center'>
-      <div className='grid grid-cols-4 gap-2 w-3/4'>
+    <div className='w-45 h-50 bg--200 flex flex-col justify-center items-center'>
+      <br />
+      <div className='grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
         {prods.map((prod) => (
           <div
             className=''
             key={prod.id}
             onClick={() => handleClick(prod.id)}
           >
-            <div className='bg-slate-700 flex flex-col justify-center items-center rounded-lg p-2 cursor-pointer hover:bg-slate-500'>
+            <div className='bg-inherit flex flex-col justify-center items-center rounded-lg p-2 cursor-pointer hover:bg-inherit'>
               <img className='w-[150px]' src={prod.image} />
-              <h5 className='text-2xl text-white font-bold'>Producto: {prod.name}</h5>
-              <p className='card-text text-white'>Descripcion: {prod.description}</p>
+              <h1 className='text-2xl text-black font-bold'>{prod.name}</h1>
+              <p className='card-text text-black'> {prod.description}</p>
+              <p className='card-text text-black'>{prod.price}</p>
             </div>
+            <br />
           </div>
         ))}
       </div>
