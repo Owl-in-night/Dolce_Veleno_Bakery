@@ -21,7 +21,7 @@ const ListProducts = () => {
         <h1 className='text-4xl text-black font-bold'>Lista de productos</h1>
       </div>
       <div className='grid grid-cols-4 gap-2 w-3/4'>
-        {prods.map((prod) => (
+        {prods.slice(0,6).map((prod) => (
           <div
             className='card'
             key={prod.id}

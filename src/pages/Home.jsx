@@ -1,8 +1,21 @@
 // import ListProducts from '../components/_partials/ListProducts'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import '../../src/App.css'
+import { products } from '../database/products'
 import { Helmet } from 'react-helmet'
 function Home () {
+  const [prods, setProds] = useState([])
+
+  const navigate = useNavigate()
+
+  const handleClick = (id) => {
+    navigate(`/catalogo/${id}`)
+  }
+
+  useEffect(() => {
+    setProds(products)
+  }, [])
   return (
     <div className='m-0 dark:bg-slate-800 border-gray-200'>
       {/* putting video */}
@@ -29,14 +42,18 @@ function Home () {
         </ul>
       </div>
       <br />
-      {/* Mansory */}
-      <div className='grid-container'>
-        <img className='grid-item' src='/img/img1.jfif' width={230} height={260} />
-        <img className='grid-item' src='/img/img2.jfif' width={230} height={260} />
-        <img className='grid-item' src='/img/img3.jfif' width={230} height={260} />
-        <img className='grid-item' src='/img/img4.jfif' width={230} height={260} />
-        <img className='grid-item' src='/img/img5.jfif' width={230} height={260} />
-        <img className='grid-item' src='/img/img6.jfif' width={230} height={260} />
+      {/* Mansory and choose select ONe */}
+      <h1 className='text-center dark:text-white'>Descubre estos y más productos en nuestro catálogo</h1>
+      <br />
+      <div className='grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
+        {prods.slice(0, 6).map((prod) => (
+          <div
+            className='grid-container' key={prod.id}
+            onClick={() => handleClick(prod.id)}
+          >
+            <img className='grid-item' src={prod.image} />
+          </div>
+        ))}
       </div>
       <div
         className='text-center lg:text-center dark:text-white'
