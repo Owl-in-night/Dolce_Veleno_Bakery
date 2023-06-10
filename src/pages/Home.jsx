@@ -39,7 +39,7 @@ function Home () {
         <img className='grid-item' src='/img/img6.jfif' width={230} height={260} />
       </div>
       <div
-        className='text-center lg:text-center'
+        className='text-center lg:text-center dark:text-white'
       >
         <p
           data-te-animation-init

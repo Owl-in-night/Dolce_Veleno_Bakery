@@ -27,9 +27,9 @@ const Catalogo = () => {
           >
             <div className='bg-inherit flex flex-col justify-center items-center rounded-lg p-2 cursor-pointer hover:bg-inherit'>
               <img className='w-[150px]' src={prod.image} />
-              <h1 className='text-2xl text-black font-bold'>{prod.name}</h1>
-              <p className='card-text text-black'> {prod.description}</p>
-              <p className='card-text text-black'>{prod.price}</p>
+              <h1 className='text-2xl text-black font-bold dark:text-white'>{prod.name}</h1>
+              <p className='card-text text-black dark:text-white'> {prod.description}</p>
+              <p className='card-text text-black dark:text-white'>{prod.price}</p>
             </div>
             <br />
           </div>
