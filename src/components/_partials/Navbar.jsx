@@ -13,7 +13,7 @@ export default function Navbar () {
         <Nav>
           <div>
             <Link className='flex items-center' to='/'>
-              <IconLight fill='#000' />
+              <IconLight data-testid='dvb' fill='#000' />
             </Link>
           </div>
           <Menu open={open}>
