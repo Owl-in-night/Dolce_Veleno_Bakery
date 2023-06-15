@@ -45,15 +45,28 @@ function Home () {
       {/* Mansory and choose select ONe */}
       <h1 className='text-center text-lg dark:text-white'>Descubre la magia y el sabor de nuestros postres</h1>
       <br />
-      <div className='bg-inherit flex flex-col justify-center items-center rounded-lg p-2 cursor-pointer hover:bg-inherit lg:grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
-        {prods.slice(0, 6).map((prod) => (
-          <div
-            className='grid-container' key={prod.id}
-            onClick={() => handleClick(prod.id)}
-          >
-            <img className='grid-item' src={prod.image} />
-          </div>
-        ))}
+      {/* Principal div of products */}
+      <div className='lg:ml-[300px] sm:grid-cols-2'>
+        <div className='bg-inherit flex flex-col rounded-lg p-2 cursor-pointer hover:bg-inherit lg:grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8' data-testid='products_1'>
+          {prods.slice(0, 3).map((prod) => (
+            <div
+              className='grid-container' key={prod.id}
+              onClick={() => handleClick(prod.id)}
+            >
+              <img className='grid-item' src={prod.image} />
+            </div>
+          ))}
+        </div>
+        <div className='bg-inherit flex flex-col justify-center rounded-lg p-2 cursor-pointer hover:bg-inherit lg:grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8' data-testid='products_2'>
+          {prods.slice(3, 6).map((prod) => (
+            <div
+              className='grid-container' key={prod.id}
+              onClick={() => handleClick(prod.id)}
+            >
+              <img className='grid-item' src={prod.image} />
+            </div>
+          ))}
+        </div>
       </div>
       <div
         className='text-center lg:text-center dark:text-white'

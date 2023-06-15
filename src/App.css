@@ -42,4 +42,10 @@
     -webkit-border-radius: 35px 0px 35px 0px; 
     border: 2px solid #5878ca;
 }
+.center {
+    margin: auto;
+    width: 100%;
+    margin-left: 150px;
+    padding: 10px;
+  }
 /* Style for text */

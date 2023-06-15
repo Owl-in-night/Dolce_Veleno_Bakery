@@ -1,6 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Footer () {
+  const { pathname } = useLocation()
+  console.log(pathname)
+  // you can check a more conditions here
+  if (pathname === '/dashboard') return null
+
   return (
 
     <footer className='bg-white rounded-lg shadow m-4 my-0 dark:bg-slate-800 border-gray-2001 '>

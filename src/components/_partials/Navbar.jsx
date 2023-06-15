@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import IconLight from '../Icons/IconLight'
 import ThemeSwitcher from './ThemeSwitcher'
 import { Header, Menu, Nav } from './styles'
@@ -7,8 +7,12 @@ import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 export default function Navbar () {
   const [open, setOpen] = React.useState(false)
+  const { pathname } = useLocation()
+  console.log(pathname)
+  // you can check a more conditions here
+  if (pathname === '/dashboard') return null
   return (
-    <div>
+    <div data-testid='navbar'>
       <Header className='bg-white rounded-lg shadow  dark:bg-slate-800 border-gray-200'>
         <Nav>
           <div>
