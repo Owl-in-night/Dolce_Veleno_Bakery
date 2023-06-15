@@ -71,8 +71,8 @@ export function Signin () {
             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Sign In</button>
             <a href='#!' className='inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800' onClick={handleResetPassword}>Forgot Password?</a>
           </div>
+          <p className='my-4 text-sm flex justify-between px-3 text-black'> Don't have an account? <Link to='/signup'>Sign Up</Link></p>
         </form>
-        <p className='my-4 text-sm flex justify-between px-3 text-black'> Don't have an account? <Link to='/signup'>Sign Up</Link></p>
         <button className='bg-slate-50 hover:bg-slate-200 text-black shadow-md rounded border-2 border-gray-300 py-2 px-4 w-full' onClick={handleGoogleSignin}>Sign In with Google</button>
         <br />
         <br />
