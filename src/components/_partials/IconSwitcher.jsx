@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import { FaMoon } from 'react-icons/fa'
-import { BsSunFill } from 'react-icons/bs'
-
-const ThemeSwitcher = () => {
+import IconDark from '../Icons/IconDark'
+import IconLight from '../Icons/IconLight'
+const IconSwitcher = () => {
   const [theme, setTheme] = useState('')
   useEffect(() => {
     if (window.matchMedia('prefer-color-scheme: dark').matches) {
@@ -26,10 +25,9 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleThemeSwitch}
-      className='text-yellow-200'
     >
-      {theme === 'dark' ? <FaMoon className={`${theme === 'dark' ? 'text-white' : ''}`} /> : <BsSunFill />}
+      {theme === 'dark' ? <IconLight /> : <IconDark />}
     </button>
   )
 }
-export default ThemeSwitcher
+export default IconSwitcher

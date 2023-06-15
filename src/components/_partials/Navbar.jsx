@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import IconLight from '../Icons/IconLight'
+import IconSwitcher from './IconSwitcher'
 import ThemeSwitcher from './ThemeSwitcher'
 import { Header, Menu, Nav } from './styles'
 import { RiMenu3Fill } from 'react-icons/ri'
@@ -17,7 +17,8 @@ export default function Navbar () {
         <Nav>
           <div>
             <Link className='flex items-center' to='/'>
-              <IconLight data-testid='dvb' fill='#000' />
+              {/* Put the IconChanger */}
+              <IconSwitcher />
             </Link>
           </div>
           <Menu open={open}>
