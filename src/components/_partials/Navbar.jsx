@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import IconSwitcher from './IconSwitcher'
-import ThemeSwitcher from './ThemeSwitcher'
+// import ThemeSwitcher from './ThemeSwitcher'
 import { Header, Menu, Nav } from './styles'
 import { RiMenu3Fill } from 'react-icons/ri'
 import React from 'react'
@@ -38,9 +38,9 @@ export default function Navbar () {
               <Link to='/signin' className='text-neutral-500 hover:text-neutral-700 focus:text-neutral-950 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-50 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400'>Iniciar Sesión</Link>
             </li>
           </Menu>
-          <div className='Theme'>
+          {/* <div className='Theme'>
             <ThemeSwitcher />
-          </div>
+          </div> */}
           <div className='icon-menu'>
             {
             open
