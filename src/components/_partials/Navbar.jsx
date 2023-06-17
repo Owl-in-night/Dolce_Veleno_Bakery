@@ -41,7 +41,7 @@ export default function Navbar () {
           {/* <div className='Theme'>
             <ThemeSwitcher />
           </div> */}
-          <div className='dark:text-white'>
+          <div className='dark:text-white lg:invisible'>
             {
             open
               ? <AiOutlineClose
