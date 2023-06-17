@@ -14,14 +14,6 @@ export const Nav = styled.nav`
     .Theme{
         display: none;
     }
-    .icon-menu{
-        svg{
-            color: black;
-            path{
-                stroke: black;
-            }
-        }
-    }
     ${useResponsiveTo('lg')}{
         grid-template-columns: 1fr 4fr 1fr;
         padding: 16px;

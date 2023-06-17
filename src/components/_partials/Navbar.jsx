@@ -21,7 +21,7 @@ export default function Navbar () {
               <IconSwitcher />
             </Link>
           </div>
-          <Menu open={open}>
+          <Menu open={open} className='dark:bg-slate-800'>
             <li>
               <Link to='/' className='text-neutral-500 hover:text-neutral-700 focus:text-neutral-950 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-50 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400'>Inicio</Link>
             </li>
@@ -41,16 +41,18 @@ export default function Navbar () {
           {/* <div className='Theme'>
             <ThemeSwitcher />
           </div> */}
-          <div className='icon-menu'>
+          <div className='dark:text-white'>
             {
             open
               ? <AiOutlineClose
                   size={20}
                   onClick={() => setOpen(!open)}
+
                 />
               : <RiMenu3Fill
                   onClick={() => setOpen(!open)}
-                  color='black' size={20}
+                  size={20}
+
                 />
           }
           </div>
