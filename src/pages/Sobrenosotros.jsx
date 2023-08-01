@@ -8,8 +8,32 @@ function Sobrenosotros () {
       </div>
       {/* Text */}
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id='up'>
+        <a href='#target' className='lg:ml-[665px] ml-[65px] bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'>Descrubre más sobre nosotros</a>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {/* Imgs */}
-      <div className='max-w-screen-2xl p-6 bg-white border border-gray-200 rounded-lg shadow lg:mx-[100px] dark:bg-gray-800 dark:border-gray-700'>
+      <div id='target' className='max-w-screen-2xl p-6 bg-white border border-gray-200 rounded-lg shadow lg:mx-[100px] dark:bg-gray-800 dark:border-gray-700'>
         <figure className='md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800'>
           <img className='w-24 h-25 lg:w-[500px] lg:h-[500px] md:w-[355px] md:h-[450px] md:rounded-none rounded-full mx-auto' src='/img/FUNDADORA.jpg' alt='' width='400px' height='512px' />
           <div className='pt-6 md:p-8 text-center md:text-left space-y-4'>

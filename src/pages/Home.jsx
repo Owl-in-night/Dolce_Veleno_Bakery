@@ -42,8 +42,14 @@ function Home () {
         </ul>
       </div>
       <br />
+      <br />
+      <br />
       {/* Mansory and choose select ONe */}
       <h1 className='text-center text-lg dark:text-white'>Descubre la magia y el sabor de nuestros postres</h1>
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       {/* Principal div of products */}
       <div className='lg:ml-[300px] sm:grid-cols-2'>
